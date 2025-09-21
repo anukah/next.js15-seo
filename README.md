@@ -74,6 +74,7 @@ export const metadata: Metadata = {
     canonical: "https://yourdomain.com",
   },
 };
+```
 ## 2. Structured Data (Schema)
 
 Structured data helps search engines **understand the meaning** of your content, leading to **rich search results**.
@@ -111,6 +112,7 @@ Defines your **business identity** and **website structure**.
     })
   }}
 />
+```
 ## 3. Dynamic Sitemap & Robots.txt
 
 These files are crucial for guiding **search engine crawlers**.  
@@ -146,6 +148,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [...staticPages, ...blogPages];
 }
+```
 ### Dynamic Robots.txt (`app/robots.ts`)
 
 The `robots.txt` file tells bots **which pages they can and cannot crawl**.  
@@ -174,6 +177,7 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: `${baseUrl}/sitemap.xml`,
   }
 }
+```
 ## 4. Page-Level and Advanced SEO
 
 Individual pages can define their own **titles, descriptions, Open Graph, and Twitter Card metadata**.
@@ -212,6 +216,7 @@ export const metadata: Metadata = {
     canonical: 'https://yourdomain.com/about',
   },
 }
+```
 
 ### Breadcrumb Schema
 
@@ -246,6 +251,7 @@ export default function SeoBreadcrumbs() {
     />
   )
 }
+```
 
 ## 5. Local SEO
 
@@ -300,6 +306,7 @@ export default function SeoLocalBusiness() {
     />
   )
 }
+```
 
 ## Overall Summary
 
